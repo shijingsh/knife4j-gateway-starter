@@ -1,0 +1,36 @@
+server:
+  port: 2000
+spring:
+  application:
+    name: knife4j-gateway
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 122.112.175.52:8848
+        username: nacos
+        password: 380177Lkf
+      config:
+        file-extension: yml
+        server-addr: 122.112.175.52:8848
+      gateway:
+        discovery:
+          locator:
+            enabled: true
+            lower-case-service-id: true
+    gateway:
+      routes:
+        - id: knife4j-doc
+          uri: lb://knife4j-doc
+          predicates:
+            - Path=/doc/**
+          filters:
+            - StripPrefix=1
+        - id: knife4j-doc2
+          uri: lb://knife4j-doc2
+          predicates:
+            - Path=/doc/**
+          filters:
+            - StripPrefix=1

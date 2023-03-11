@@ -1,0 +1,21 @@
+server:
+  port: 2002
+spring:
+  application:
+    name: knife4j-doc2
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 122.112.175.52:8848
+        username: nacos
+        password: 380177Lkf
+      config:
+        file-extension: yml
+        server-addr: 122.112.175.52:8848
+
+# knife4j公共配置
+knife4j:
+  enable: true
