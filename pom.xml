@@ -7,7 +7,7 @@
     <modules>
         <module>doc-gateway</module>
         <module>doc-service</module>
-        <module>doc2-service</module>
+        <module>doc-service2</module>
         <module>doc-knife4j</module>
     </modules>
     <name>knife4j-gateway-starter</name>

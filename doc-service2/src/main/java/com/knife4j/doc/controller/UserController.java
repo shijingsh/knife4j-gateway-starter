@@ -17,12 +17,12 @@ import java.util.List;
  * @since 2022-08-28
  */
 @RestController
-@Api(tags = "用户接口", produces = "application/json")
-@RequestMapping("/user")
+@Api(tags = "用户接口2", produces = "application/json")
+@RequestMapping("/user2")
 public class UserController {
 
 
-    @ApiOperation(value = "用户列表", httpMethod = "GET")
+    @ApiOperation(value = "用户列表2", httpMethod = "GET")
     @GetMapping("/list")
     public List<UserModel> list(){
         return Arrays.asList(new UserModel(1L, "admin", true, 18),

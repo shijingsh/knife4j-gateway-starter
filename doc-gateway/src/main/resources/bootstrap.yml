@@ -31,6 +31,6 @@ spring:
         - id: knife4j-doc2
           uri: lb://knife4j-doc2
           predicates:
-            - Path=/doc/**
+            - Path=/doc2/**
           filters:
             - StripPrefix=1

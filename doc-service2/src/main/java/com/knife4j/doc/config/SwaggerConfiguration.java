@@ -50,7 +50,7 @@ public class SwaggerConfiguration {
     @Order(value = 1)
     public Docket docDocket() {
         return new Docket(DocumentationType.SWAGGER_2).
-                pathMapping("/doc")
+                pathMapping("/doc2")
                 .enable(true)
                 .apiInfo(groupApiInfo())
                 .select()
