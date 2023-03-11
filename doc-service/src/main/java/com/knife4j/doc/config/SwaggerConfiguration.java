@@ -49,7 +49,7 @@ public class SwaggerConfiguration {
     @Bean
     @Order(value = 1)
     public Docket docDocket() {
-        return new Docket(DocumentationType.SWAGGER_2).
+        return new Docket(DocumentationType.OAS_30).
                 pathMapping("/doc")
                 .enable(true)
                 .apiInfo(groupApiInfo())
